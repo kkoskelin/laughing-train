@@ -5,7 +5,7 @@ import axios from 'axios';
 jest.mock('axios');
 const mockedAxios = axios as jest.Mocked<typeof axios>;
 
-const dummyUrl = process.env.VIDABLE_API_ENDPOINT + '/action';
+const dummyUrl = `${process.env.VIDABLE_API_ENDPOINT as string}/action`;
 
 describe('httpGateway', () => {
   it('exists', () => {

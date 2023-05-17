@@ -1,9 +1,18 @@
 import { Todo } from '../../src/types/Todo';
 
 const todoFakeList: Todo[] = [
-  { createdTimestamp: new Date().toString(), detail: 'a thing', id: '7' },
-  { createdTimestamp: new Date().toString(), detail: 'a thing 2', id: '256' },
-  { createdTimestamp: new Date().toString(), detail: 'a thing 8', id: '42' },
+  { createdTimestamp: '2011-11-14T15:28:46.493Z', detail: 'a thing', id: '7' },
+  {
+    createdTimestamp: '2018-02-09T12:38:46.493Z',
+    detail: 'a thing 2',
+    id: '256',
+  },
+  {
+    completedTimestamp: '2021-08-13T21:42:46.493Z',
+    createdTimestamp: '2023-05-29T12:58:46.493Z',
+    detail: 'a thing 8',
+    id: '42',
+  },
 ];
 
 const get = () => {

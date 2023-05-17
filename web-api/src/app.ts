@@ -2,11 +2,14 @@ import { BadRequestError, NotFoundError } from '../../src/errors';
 import { Todo } from '../../src/types/Todo';
 import { todoService } from './todoService';
 import bodyparser from 'body-parser';
+import cors from 'cors';
 import express, { Express, Response } from 'express';
 
 const app: Express = express();
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use(bodyparser.json());
+// eslint-disable-next-line @typescript-eslint/no-unsafe-call
+app.use(cors());
 
 const exceptionHandler = (e: Error, res: Response) => {
   if (e instanceof BadRequestError) {

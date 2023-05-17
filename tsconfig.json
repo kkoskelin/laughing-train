@@ -10,9 +10,11 @@
     "moduleResolution": "node",
     "noImplicitAny": true,
     "outDir": "./dist/",
+    "resolveJsonModule": true,
     "skipLibCheck": true,
-    "target": "es2021",
-    "resolveJsonModule": true
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "target": "es2021"
   },
   "include": [
     "src",

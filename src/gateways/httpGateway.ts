@@ -22,32 +22,32 @@ async function post(
   let result;
   try {
     result = await axios.post(requestUrl, payload, options);
+    return result.data as unknown;
   } catch (e) {
     handleRequestException(e as AxiosError);
   }
-  return result.data as unknown;
 }
 
 async function get(
   requestUrl: string,
-  options: RawAxiosRequestConfig,
+  options?: RawAxiosRequestConfig,
 ): Promise<unknown> {
   let result;
   try {
     result = await axios.get(requestUrl, options);
+    return result.data as unknown;
   } catch (e) {
     handleRequestException(e as AxiosError);
   }
-  return result.data as unknown;
 }
 async function remove(requestUrl: string): Promise<unknown> {
   let result;
   try {
     result = await axios.delete(requestUrl);
+    return result.data as unknown;
   } catch (e) {
     handleRequestException(e as AxiosError);
   }
-  return result.data as unknown;
 }
 
 async function put(
@@ -58,10 +58,10 @@ async function put(
   let result;
   try {
     result = await axios.put(requestUrl, payload, options);
+    return result.data as unknown;
   } catch (e) {
     handleRequestException(e as AxiosError);
   }
-  return result.data as unknown;
 }
 
 export const httpGateway = {

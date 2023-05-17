@@ -8,6 +8,6 @@
   }
 
   li {
-    @apply list-disc;
+    /* @apply list-disc; */
   }
 }

@@ -1,5 +1,5 @@
-import { getRandomInfo } from '../../gateways/getRandomInfoGateway';
+import { todoGateway } from '../../gateways/todoGateway';
 
 export const effects = {
-  getRandomInfo,
+  todoGateway,
 };

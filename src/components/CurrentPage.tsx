@@ -2,7 +2,7 @@ import { useAppState } from '../presenter/presenter';
 import React from 'react';
 
 import { LoadingTemplate } from '../views/LoadingTemplate';
-import { RandomInfo } from './RandomInfo';
+import { TodoEdit } from '../views/TodoEdit';
 import { TodoList } from '../views/TodoList';
 
 export const CurrentPage = () => {
@@ -10,8 +10,8 @@ export const CurrentPage = () => {
   return (
     <>
       {currentPage == 'TodoList' && <TodoList />}
+      {currentPage == 'TodoEdit' && <TodoEdit />}
       {currentPage == 'Loading' && <LoadingTemplate />}
-      {currentPage == 'RandomInfo' && <RandomInfo />}
     </>
   );
 };
