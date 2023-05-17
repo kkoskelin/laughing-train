@@ -1,9 +1,9 @@
 import { displayLoading } from './displayLoading';
 import { displayRandomInfo } from './displayRandomInfo';
-import { displaySplash } from './displaySplash';
+import { displayTodos } from './displayTodos';
 
 export const actions = {
   displayLoading,
   displayRandomInfo,
-  displaySplash,
+  displayTodos,
 };

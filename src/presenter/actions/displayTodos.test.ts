@@ -2,11 +2,11 @@ import { overmindApp } from '../presenter';
 
 const { actions, state } = overmindApp;
 
-describe('displaySplash', () => {
-  it('sets current page to Splash from Loading page', () => {
+describe('displayTodos', () => {
+  it('sets current page to Todos from Loading page', () => {
     actions.displayLoading();
     expect(state.currentPage).toBe('Loading');
-    actions.displaySplash();
-    expect(state.currentPage).toBe('Splash');
+    actions.displayTodos();
+    expect(state.currentPage).toBe('TodoList');
   });
 });

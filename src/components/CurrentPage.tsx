@@ -3,13 +3,13 @@ import React from 'react';
 
 import { LoadingTemplate } from '../views/LoadingTemplate';
 import { RandomInfo } from './RandomInfo';
-import { SplashTemplate } from '../views/SplashTemplate';
+import { TodoList } from '../views/TodoList';
 
 export const CurrentPage = () => {
   const { currentPage } = useAppState();
   return (
     <>
-      {currentPage == 'Splash' && <SplashTemplate />}
+      {currentPage == 'TodoList' && <TodoList />}
       {currentPage == 'Loading' && <LoadingTemplate />}
       {currentPage == 'RandomInfo' && <RandomInfo />}
     </>
